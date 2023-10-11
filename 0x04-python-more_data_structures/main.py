@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-best_score = __import__('10-best_score').best_score
+weight_average = __import__('100-weight_average').weight_average
 
-a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
-best_key = best_score(a_dictionary)
-print("Best score: {}".format(best_key))
-
-best_key = best_score(None)
-print("Best score: {}".format(best_key))
+my_list = [(1, 2), (2, 1), (3, 10), (4, 2)]
+# = ((1 * 2) + (2 * 1) + (3 * 10) + (4 * 2)) / (2 + 1 + 10 + 2)
+result = weight_average(my_list)
+print("Average: {:0.2f}".format(result))

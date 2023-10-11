@@ -1,4 +1,6 @@
 #!/bin/bash
+
+message="$(cat README.md)"
 git add .
-git commit -m "0x04-python-more_data_structures"
+git commit -m"$message"
 git push 

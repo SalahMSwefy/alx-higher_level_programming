@@ -17,6 +17,7 @@ class Square:
             position (tuple): position of square (private)
         """
         self.__size = size
+        self.__position = position
 
     def area(self):
 
@@ -66,11 +67,11 @@ class Square:
         setter function to validate position attribute
 
         Args:
-            position (tuple): position of square
+            value (tuple): position of square
 
         Raises:
-        (TypeError) exception with the message:
-        "position must be a tuple of 2 positive integers"
+            (TypeError) exception with the message:
+                "position must be a tuple of 2 positive integers"
 
         """
         if not isinstance(value, tuple):

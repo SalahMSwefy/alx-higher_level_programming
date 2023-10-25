@@ -16,8 +16,8 @@ class Square:
             size (int): size of square (private)
             position (tuple): position of square (private)
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
 

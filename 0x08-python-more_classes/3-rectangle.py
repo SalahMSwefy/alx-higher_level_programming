@@ -55,7 +55,7 @@ class Rectangle:
     def area(self):
         """Method that returns the area of rectangle"""
         return self.width * self.height
-    
+
     def __str__(self):
         """Method that returns a string of rectangle"""
         if self.width == 0 or self.height == 0:

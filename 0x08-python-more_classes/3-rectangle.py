@@ -52,7 +52,7 @@ class Rectangle:
         else:
             return 2*(self.width + self.height)
 
-    def area(self), print(self):
+    def area(self):
         """Method that returns the area of rectangle"""
         return self.width * self.height
     

@@ -4,7 +4,15 @@
 
 class Rectangle:
 
-    """Class Rectangle that defines a rectangle"""
+    """Class Rectangle that defines a rectangle
+
+    Attributes:
+        width (int): width of rectangle
+        height (int): height of rectangle
+    """
+
+    """Public class attribute that counts number of instances"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initializes rectangle with width and height
@@ -15,6 +23,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -75,3 +84,4 @@ class Rectangle:
     def __del__(self):
         """Method that prints a message when an instance is deleted"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1

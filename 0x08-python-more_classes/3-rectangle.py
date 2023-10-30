@@ -64,12 +64,3 @@ class Rectangle:
             for i in range(self.height):
                 print("#" * self.width)
             return ""
-    
-    def print(self):
-        """Method that returns a string of rectangle"""
-        if self.width == 0 or self.height == 0:
-            return ""
-        else:
-            for i in range(self.height):
-                print("#" * self.width)
-            return ""

@@ -1,4 +1,4 @@
-#!/usr/bin/pytuon3
+#!/usr/bin/python3
 """ Module that contains a function that returns a list with the available
     attributes and methods of an object.
 """

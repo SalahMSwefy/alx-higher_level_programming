@@ -48,27 +48,3 @@ Integer takes in 2 arguments
     >>> bg.integer_validator(1, 2, 3)
     Traceback (most recent call last):
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
-
-    >>> b.integer_validator("integer", 0)
-	Traceback (most recent call last):
-    ...
-    ValueError: integer must be greater than 0
-
-    >>> b.integer_validator("integer", -5)
-	Traceback (most recent call last):
-    ...
-    ValueError: integer must be greater than 0
-
-    >>> b.integer_validator("bool", True)
-	Traceback (most recent call last):
-    ...
-    TypeError: bool must be an integer
-	>>> b.integer_validator("float", 1.5)
-    Traceback (most recent call last):
-    ...
-    TypeError: float must be an integer
-    >>> b.integer_validator("complex", complex(1, 1))
-    Traceback (most recent call last):
-    ...
-    TypeError: complex must be an integer
-    

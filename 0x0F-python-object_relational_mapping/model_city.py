@@ -4,6 +4,7 @@ model_city.py: Python file similar to model_state.py that defines a
 City class and an instance Base = declarative_base():
 '''
 
+from sys import argv
 from sqlalchemy import create_engine, VARCHAR, Column, Integer
 from sqlalchemy import String, ForeignKey
 from sqlalchemy.orm import declarative_base, sessionmaker

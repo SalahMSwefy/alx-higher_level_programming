@@ -6,7 +6,7 @@ sends a request to the URL and displays the body of the response
 '''
 import urllib.request
 from sys import argv
-import urllib.error.HTTPError
+
 
 if __name__ == "__main__":
     try:

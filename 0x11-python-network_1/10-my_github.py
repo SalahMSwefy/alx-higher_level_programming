@@ -12,6 +12,5 @@ if __name__ == "__main__":
     password = argv[2]
     url = 'https://api.githup.com/user'
 
-    
     r = requests.get(url, auth=(username, password))
     print(r.json().get('id'))

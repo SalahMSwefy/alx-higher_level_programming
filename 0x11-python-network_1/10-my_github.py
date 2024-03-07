@@ -8,6 +8,10 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
+    username = argv[1]
+    password = argv[2]
     url = 'https://api.githup.com/user'
-    r = requests.get(url, auth=(argv[1], argv[2]))
+
+    
+    r = requests.get(url, auth=(username, password))
     print(r.json().get('id'))

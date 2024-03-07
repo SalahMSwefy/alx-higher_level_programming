@@ -7,7 +7,7 @@ Write a Python script that takes your GitHub credentials
 import requests
 from sys import argv
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     username = argv[1]
     password = argv[2]
     url = 'https://api.githup.com/user'

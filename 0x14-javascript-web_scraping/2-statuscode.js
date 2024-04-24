@@ -6,7 +6,5 @@ request(url, (err, response, body) => {
   if (err) {
     console.error(err);
     process.exit(1);
-  }
-  else 
-    console.log('code: '+ response.statusCode);
+  } else { console.log('code: ' + response.statusCode); }
 });

@@ -1,23 +1,23 @@
 #!/usr/bin/node
-const url = process.argv[2];
 const request = require('request');
-const count = {};
+const url = process.argv[2];
+const myDict = {};
 
-request(url, (err, response, body) => {
+request(url, function (err, data, body) {
   if (err) {
-    console.error(err);
-    process.exit(1);
+    console.log(err);
   } else {
-    const tasks = JSON.parse(body);
-    for (let i = 0; i < tasks.lenght; i++) {
-      if (tasks[i].completed === true) {
-        if (count[tasks[i].userId] === undefined) {
-          count[tasks[i].userId] = 1;
+    const response = JSON.parse(body);
+
+    for (let i = 0; i < response.length; i++) {
+      if (response[i].completed === true) {
+        if (myDict[response[i].userId] === undefined) {
+          myDict[response[i].userId] = 1;
         } else {
-          count[tasks[i].userId] += 1;
+          myDict[response[i].userId] += 1;
         }
       }
     }
   }
-  console.log(count);
+  console.log(myDict);
 });

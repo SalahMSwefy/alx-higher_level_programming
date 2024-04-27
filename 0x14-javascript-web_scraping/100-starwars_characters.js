@@ -6,7 +6,7 @@ request({ url, method: 'GET' }, (err, response, body) => {
   if (err) {
     console.error(err);
     process.exit(1);
-  } else { 
+  } else {
     const characters = JSON.parse(body).characters;
     characters.forEach(character => {
       request({ url: character, method: 'GET' }, (err, response, body) => {
@@ -16,5 +16,5 @@ request({ url, method: 'GET' }, (err, response, body) => {
         } else { console.log(JSON.parse(body).name); }
       });
     });
-   }
+  }
 });
